@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "03c18ca8-fcab-4dd5-81d7-d428678175e6",
+		"name": "API-MANAJEMEN-FILM.V2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "48016652",
+		"_collection_link": "https://kunengrestu-5150417.postman.co/workspace/Sulung's-Workspace~7a847b2b-8e56-4ad9-8db3-b656a3094ef6/collection/48016652-03c18ca8-fcab-4dd5-81d7-d428678175e6?action=share&source=collection_link&creator=48016652"
+	},
+	"item": [
+		{
+			"name": "GET FILM",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "GET DIRECTORS",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "POSTFILM",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Samudra\",\r\n    \"director\":\"Budi\",\r\n    \"year\":2009\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3300/movies"
+			},
+			"response": []
+		},
+		{
+			"name": "POST DIRECTORS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nama\":\"Budi\",\r\n    \"BirthYear\":2008\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3300/directors"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT FILM",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Samudra 2\",\r\n    \"director\":\"Samsul\",\r\n    \"year\":2010\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3300/movies/3"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT DIRECTORS",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nama\":\"Samsul\",\r\n    \"BirthYear\":\"1980\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3300/directors/3"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE FILM",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nama\":\"Samsul\",\r\n    \"BirthYear\":\"1980\"\r\n}"
+				},
+				"url": "http://localhost:3300/movies/3"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE DIRECTOR",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nama\":\"Samsul\",\r\n    \"BirthYear\":\"1980\"\r\n}"
+				},
+				"url": "http://localhost:3300/directors/5"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
